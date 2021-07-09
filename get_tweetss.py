@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 26 11:19:44 2021
-
-@author: Petri
+@author: Tomi Räsänen
 """
 import tweepy
 import json

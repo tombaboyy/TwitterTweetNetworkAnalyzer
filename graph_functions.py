@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 26 10:01:59 2021
-
-@author: Petri
+@author: Tomi Räsänen
 """
 import pandas as pd
 
