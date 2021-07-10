@@ -16,7 +16,9 @@ auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
 api = tweepy.API(auth)
 
 HAKUSANA = "Pöysti"
-määrä = 250
+MÄÄRÄ = 250
+
+# This "ALL" functionality isn't working correctly just yet, so it has to be set to "False"
 KAIKKI = False
 
 def get_tweets(api, HAKUSANA, monta):   
@@ -42,7 +44,7 @@ def get_tweets(api, HAKUSANA, monta):
         search_words = HAKUSANA
         
         tweets = tweepy.Cursor(api.search,
-                      q=search_words).items(määrä)
+                      q=search_words).items(MÄÄRÄ)
         
         my_list_of_tweets = []
         for tweet in tweets:
@@ -52,7 +54,7 @@ def get_tweets(api, HAKUSANA, monta):
         with open('tweets.json', 'w') as file:
                 file.write(json.dumps(my_list_of_tweets, indent=4))
             
-t = get_tweets(api, HAKUSANA, määrä)
+t = get_tweets(api, HAKUSANA, MÄÄRÄ)
 pf = pd.read_json("tweets.json")
 
 print("\n------------------------------\n")
