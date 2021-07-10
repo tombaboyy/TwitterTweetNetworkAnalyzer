@@ -30,6 +30,7 @@ access_token_secret= ''
 auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
 api = tweepy.API(auth)
 
+""" This function was found on the internet. I can't remember the site"""
 def make_plot(G,nodes):
     edge_x = []
     edge_y = []
