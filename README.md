@@ -7,5 +7,5 @@ This is just a fast one-person hobby project, so the commenting and naming of va
 
 ## How To Use
 1. The user must specify the keyword in the variable "HAKUSANA" in the file "get\_tweetss.py"
-2. The user must specify the keyword in the variable "määrä" in the file _get\_tweetss.py_
+2. The user must specify the keyword in the variable "MÄÄRÄ" in the file _get\_tweetss.py_
 3. The user can run the file "network_analysis.py"
